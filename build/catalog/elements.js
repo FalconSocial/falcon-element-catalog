@@ -45,6 +45,8 @@ module.exports = function (imports) {
           name: elementName
         });
 
+        console.log('main', elementName, details.main);
+
         fs.mkdirsSync(path.join(root, destDir, 'data', 'docs'));
         if (typeof details.main === 'string') details.main = [details.main];
         analyze(root, destDir, elementName, details.main || [elementName + '.html'], function(err, data) {

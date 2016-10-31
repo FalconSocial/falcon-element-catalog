@@ -1,7 +1,7 @@
 {
-  "name": "polymer-element-catalog",
+  "name": "falcon-element-catalog",
   "version": "1.0.1",
-  "description": "A catalog of Google's Web Components",
+  "description": "A catalog of falcon.io's Web Components",
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/divshot/polymer-element-catalog.git"
+    "url": "git@github.com:FalconSocial/falcon-element-catalog.git"
   },
   "keywords": [
     "polymer",
@@ -25,9 +25,9 @@
   "author": "Google",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/divshot/polymer-element-catalog/issues"
+    "url": "https://github.com/falconsocial/falcon-element-catalog/issues"
   },
-  "homepage": "https://github.com/divshot/polymer-element-catalog",
+  "homepage": "git@github.com:FalconSocial/falcon-element-catalog.git",
   "devDependencies": {
     "JSONStream": "^0.10.0",
     "apache-server-configs": "^2.7.1",

@@ -1,5 +1,12 @@
 {
   "packages": [
+  {
+      "name": "build-blocks",
+      "title":"Build em up",
+      "color":"#81c724",
+      "symbol": "Bu",
+      "tagline":"Build rules"
+      },
     {
       "name":"iron-elements",
       "title":"Iron Elements",

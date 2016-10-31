@@ -48,8 +48,5 @@
 }
 
 ::content .content {
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 40px;
+  @apply(--layout-vertical);
 }

@@ -30,6 +30,7 @@ module.exports = function (imports) {
         deps: details.dependencies
       });
 
+      console.log('elements', elements)
       // Parse all guides and add to packages meta
       guidesStream
         .pipe(stream.filter(function (guide) {

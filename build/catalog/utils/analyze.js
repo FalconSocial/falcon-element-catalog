@@ -9,8 +9,9 @@ var Promise = require('es6-promise').Promise;
 module.exports = function(root, destDir, elementName, sources, callback) {
   var elRoot = path.join(root, 'bower_components', elementName);
   var elPath = path.join(elRoot, elementName + '.html');
+  console.log('sources', sources)
   var sourcePaths = sources.map(function(source) {
-    return (source.indexOf('/') === 0) ? source : path.join(elRoot,source);
+    return (source.indexOf('/') >= 0) ? source : path.join(elRoot,source);
   });
   var loader = new FileLoader();
 
@@ -29,6 +30,7 @@ module.exports = function(root, destDir, elementName, sources, callback) {
         }
       })
     .then(function(analyzer){
+      console.log(path, analyzer.elementsForFolder(path));
       return {
         elements: analyzer.elementsForFolder(path),
         behaviors: analyzer.behaviorsForFolder(path),
